@@ -54,3 +54,34 @@ for (i = 0; i < timeSlots.length; i++) {
     saveBtnDiv.text("Save");
     $(".float-right").append(saveBtnDiv);
 }
+
+// Acquire the local storage data
+var userKey8 = localStorage.getItem("key8");
+$(".textarea.row.8").val(userKey8)
+
+var userKey9 = localStorage.getItem("key9");
+$(".textarea.row.9").val(userKey9)
+
+var userKey10 = localStorage.getItem("key10");
+$(".textarea.row.10").val(userKey10)
+
+var userKey11 = localStorage.getItem("key11");
+$(".textarea.row.11").val(userKey11)
+
+var userKey12 = localStorage.getItem("key12");
+$(".textarea.row.12").val(userKey12)
+
+var userKey13 = localStorage.getItem("key13");
+$(".textarea.row.13").val(userKey13)
+
+var userKey14 = localStorage.getItem("key14");
+$(".textarea.row.14").val(userKey14)
+
+var userKey15 = localStorage.getItem("key15");
+$(".textarea.row.15").val(userKey15)
+
+var userKey16 = localStorage.getItem("key16");
+$(".textarea.row.16").val(userKey16)
+
+var userKey17 = localStorage.getItem("key17");
+$(".textarea.row.17").val(userKey17)
