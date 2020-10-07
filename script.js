@@ -35,7 +35,6 @@ for (var i = 0; i < timeSlots.length; i++) {
 }
 
 // For loop adding an entryDiv and coloring based on currentHour var
-
 for (i = 0; i < timeSlots.length; i++) {
   var entryDiv = $(
     `<input type='text' data-hour='${workHours[i]}' class='textarea row ${workHours[i]}' size='90' placeholder=''/>`
@@ -47,4 +46,11 @@ for (i = 0; i < timeSlots.length; i++) {
   } else if (workHours[i] > currentHour) {
     $(entryDiv).css("background", "#42f55a");
   }
+}
+
+// For loop adding a saveBtnDiv to calender
+for (i = 0; i < timeSlots.length; i++) {
+    var saveBtnDiv = $("<button class='saveBtn saveBtn:hover'>");
+    saveBtnDiv.text("Save");
+    $(".float-right").append(saveBtnDiv);
 }
