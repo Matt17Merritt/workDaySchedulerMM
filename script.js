@@ -50,38 +50,52 @@ for (i = 0; i < timeSlots.length; i++) {
 
 // For loop adding a saveBtnDiv to calender
 for (i = 0; i < timeSlots.length; i++) {
-    var saveBtnDiv = $("<button class='saveBtn saveBtn:hover'>");
-    saveBtnDiv.text("Save");
-    $(".float-right").append(saveBtnDiv);
+  var saveBtnDiv = $("<button class='saveBtn saveBtn:hover'>");
+  saveBtnDiv.text("Save");
+  $(".float-right").append(saveBtnDiv);
 }
 
 // Acquire the local storage data
-var userKey8 = localStorage.getItem("key8");
-$(".textarea.row.8").val(userKey8)
-
 var userKey9 = localStorage.getItem("key9");
-$(".textarea.row.9").val(userKey9)
+$(".textarea.row.9").val(userKey9);
 
 var userKey10 = localStorage.getItem("key10");
-$(".textarea.row.10").val(userKey10)
+$(".textarea.row.10").val(userKey10);
 
 var userKey11 = localStorage.getItem("key11");
-$(".textarea.row.11").val(userKey11)
+$(".textarea.row.11").val(userKey11);
 
 var userKey12 = localStorage.getItem("key12");
-$(".textarea.row.12").val(userKey12)
+$(".textarea.row.12").val(userKey12);
 
 var userKey13 = localStorage.getItem("key13");
-$(".textarea.row.13").val(userKey13)
+$(".textarea.row.13").val(userKey13);
 
 var userKey14 = localStorage.getItem("key14");
-$(".textarea.row.14").val(userKey14)
+$(".textarea.row.14").val(userKey14);
 
 var userKey15 = localStorage.getItem("key15");
-$(".textarea.row.15").val(userKey15)
+$(".textarea.row.15").val(userKey15);
 
 var userKey16 = localStorage.getItem("key16");
-$(".textarea.row.16").val(userKey16)
+$(".textarea.row.16").val(userKey16);
 
 var userKey17 = localStorage.getItem("key17");
-$(".textarea.row.17").val(userKey17)
+$(".textarea.row.17").val(userKey17);
+
+// Storing the local storage data via click function
+$("button").click(function () {
+  function storeData(row, key) {
+    var userInput = $(row).val();
+    localStorage.setItem(key, userInput);
+  }
+  storeData(".textarea.row.9", "key9");
+  storeData(".textarea.row.10", "key10");
+  storeData(".textarea.row.11", "key11");
+  storeData(".textarea.row.12", "key12");
+  storeData(".textarea.row.13", "key13");
+  storeData(".textarea.row.14", "key14");
+  storeData(".textarea.row.15", "key15");
+  storeData(".textarea.row.16", "key16");
+  storeData(".textarea.row.17", "key17");
+});
