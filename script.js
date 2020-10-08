@@ -28,7 +28,7 @@ var workHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 
 // For loop adding timeSlots to timeDiv
 for (var i = 0; i < timeSlots.length; i++) {
-  let timeDiv = $("<p>");
+  var timeDiv = $("<p>");
   timeDiv.addClass("hour row");
   timeDiv.text(timeSlots[i]);
   $(".float-left").append(timeDiv);
